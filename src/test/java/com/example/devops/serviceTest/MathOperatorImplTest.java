@@ -24,7 +24,7 @@ public class MathOperatorImplTest {
     private MathOperator mathOperator;
 
     @Test
-    public void testDoMath() throws InvalidOperationException {
+    public void testMathOperations() throws InvalidOperationException {
 
         // performing unit tests for each operation
         assertEquals(9, mathOperator.doMath(5, 4, "+"));
