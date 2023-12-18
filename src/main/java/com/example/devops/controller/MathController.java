@@ -19,10 +19,10 @@ import java.util.Map;
 @RequestMapping("/api/math")
 public class MathController {
 
-    private final MathOperatorImpl mathOperator;
+    private final MathOperator mathOperator;
 
     @Autowired
-    public MathController(MathOperatorImpl mathOperator) {
+    public MathController(MathOperator mathOperator) {
         this.mathOperator = mathOperator;
     }
 
