@@ -3,6 +3,7 @@ package com.example.devops.controller;
 import com.example.devops.dto.DoMathRequest;
 import com.example.devops.exceptions.InvalidOperationException;
 import com.example.devops.service.MathOperator;
+import com.example.devops.serviceImpl.MathOperatorImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,10 +19,10 @@ import java.util.Map;
 @RequestMapping("/api/math")
 public class MathController {
 
-    private final MathOperator mathOperator;
+    private final MathOperatorImpl mathOperator;
 
     @Autowired
-    public MathController(MathOperator mathOperator) {
+    public MathController(MathOperatorImpl mathOperator) {
         this.mathOperator = mathOperator;
     }
 
